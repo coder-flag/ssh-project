@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--<bean name="injectionService" class="com.springTest.ioc.service.InjectionServiceImpl">-->
+		<!--<property name="injectionDao" ref="injectionDao"></property>-->
+	<!--</bean>-->
+
+	<bean name="injectionService" class="com.springTest.ioc.service.InjectionServiceImpl">
+		<constructor-arg name="injectionDao" ref="injectionDao"></constructor-arg>
+	</bean>
+
+	<bean name="injectionDao" class="com.springTest.ioc.dao.InjectionDaoImpl"></bean>
+</beans>

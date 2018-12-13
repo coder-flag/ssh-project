@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+		default-autowire="constructor">
+
+
+	<bean id="service" class="com.springTest.autoWiring.Service">
+		<!--<property name="dao" ref="dao"></property>-->
+		<!--<constructor-arg ref="dao"></constructor-arg>-->
+	</bean>
+
+	<bean id="dao"  class="com.springTest.autoWiring.Dao"></bean>
+
+
+	<!--byType:  <bean   class="com.springTest.autoWiring.Dao"></bean>  不需要cons，需要setter方法 ，不需要property constructor-arg-->
+	<!--byName:  <bean id="dao"  class="com.springTest.autoWiring.Dao"></bean>  不需要cons，需要setter方法 ，不需要property constructor-arg-->
+	<!--constructor:  <bean  class="com.springTest.autoWiring.Dao"></bean>  需要cons，不需要setter方法 ，不需要property constructor-arg-->
+
+</beans>
