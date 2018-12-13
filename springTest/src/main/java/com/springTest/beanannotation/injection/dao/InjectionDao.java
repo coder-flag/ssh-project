@@ -1,4 +1,4 @@
-package com.springTest.ioc.dao;
+package com.springTest.beanannotation.injection.dao;
 
 /**
  * @Author: 邹家辉

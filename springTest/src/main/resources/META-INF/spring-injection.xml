@@ -11,5 +11,5 @@
 		<constructor-arg name="injectionDao" ref="injectionDao"></constructor-arg>
 	</bean>
 
-	<bean name="injectionDao" class="com.springTest.ioc.dao.InjectionDaoImpl"></bean>
+	<bean name="injectionDao" class="com.springTest.beanannotation.injection.dao.InjectionDaoImpl"></bean>
 </beans>

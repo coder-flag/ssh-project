@@ -10,8 +10,9 @@ import org.springframework.stereotype.Component;
  * @Modified By:
  **/
 
-@Scope
+@Scope    //单例
 //@Component("bean")
+//@Scope("prototype")
 @Component
 public class BeanAnnotation {
     public void  say(String arg){
