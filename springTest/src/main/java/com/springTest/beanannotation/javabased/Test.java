@@ -23,4 +23,18 @@ public class Test {
         ((ClassPathXmlApplicationContext) ctx).destroy();
 
     }
+
+    public void test1(){
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("META-INF/spring-beanannotation.xml");
+        Store store = (storeString)ctx.getBean("myDriverManager");
+        System.out.println(store.getClass().getName());
+        ((ClassPathXmlApplicationContext) ctx).destroy();
+    }
+
+    @org.junit.Test
+    public void test2(){
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("META-INF/spring-beanannotation.xml");
+       MyDriverManager myDriverManager = (MyDriverManager)ctx.getBean("myDriverManager");
+        myDriverManager.PrintString();
+    }
 }
