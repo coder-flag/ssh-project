@@ -12,9 +12,11 @@ import org.springframework.stereotype.Service;
 @Component
 public class Moocbiz {
 
-    public void say(){
 
-        System.out.println("moocbiz...");
+
+    public void say(String str){
+
+        System.out.println("moocbiz..." + str);
 //        throw new  RuntimeException();
     }
 }

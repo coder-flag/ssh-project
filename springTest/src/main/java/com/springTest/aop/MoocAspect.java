@@ -24,9 +24,9 @@ public class MoocAspect {
     public void pointcut(){
     }
 
-    @Before("execution(* com.springTest.aop.Moocbiz.say(..))")
-    public void before(){
-        System.out.println("before....");
+    @Before("execution(* com.springTest.aop.Moocbiz.say(..)) && args(a)" )
+    public void before(String a){
+        System.out.println("before...." + a);
     }
 
     @After("pointcut()")

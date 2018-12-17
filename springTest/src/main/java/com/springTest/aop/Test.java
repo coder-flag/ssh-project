@@ -18,6 +18,6 @@ public class Test {
 
         Moocbiz moocbiz =  (Moocbiz) ctx.getBean("moocbiz");
 
-        moocbiz.say();
+        moocbiz.say("this is test");
     }
 }
