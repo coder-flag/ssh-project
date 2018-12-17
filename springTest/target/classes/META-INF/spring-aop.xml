@@ -9,7 +9,7 @@
 
 	<aop:config>
 		<aop:aspect id="moocAspectAOP" ref="moocAspect">
-			<aop:pointcut expression="execution(* com.springTest.aop.Moocbiz.*(..))" id="moocPointcut" />
+			<aop:pointcut expression="execution(* com.springTest.aop.Moocbiz.*biz(..))" id="moocPointcut" />   <!-- 切点-->
 			<aop:before method="before" pointcut-ref="moocPointcut" />
 			<aop:after-returning method="after" pointcut-ref="moocPointcut"/>
 			<aop:after-throwing method="throwing" pointcut-ref="moocPointcut"/>
