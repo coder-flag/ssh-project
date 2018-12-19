@@ -48,6 +48,21 @@
       <artifactId>jstl</artifactId>
       <version>RELEASE</version>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl-api -->
+    <dependency>
+      <groupId>javax.servlet.jsp.jstl</groupId>
+      <artifactId>jstl-api</artifactId>
+      <version>RELEASE</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.apache.taglibs/taglibs-standard-impl -->
+    <dependency>
+      <groupId>org.apache.taglibs</groupId>
+      <artifactId>taglibs-standard-impl</artifactId>
+      <version>RELEASE</version>
+    </dependency>
+
     <!--mysql驱动包-->
     <dependency>
       <groupId>mysql</groupId>
