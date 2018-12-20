@@ -29,7 +29,6 @@
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 
-
   <!--&lt;!&ndash;机器识别的&ndash;&gt;-->
   <!--<spring-mapping>-->
     <!--<servlet-name>-->
